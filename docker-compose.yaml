@@ -1,0 +1,9 @@
+version: '3'
+services:
+  awsscout2:
+    build: .
+    volumes:
+     - ./aws:/root/.aws
+     - ./reports:/reports
+    environment:
+     - AWS_PROFILE=cpopa
